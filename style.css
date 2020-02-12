@@ -1,0 +1,89 @@
+body {
+    background-color: #d0cfce;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: center;
+}
+
+.box-profile {
+    width: 800px;
+    height: auto;
+    background-color: #f9690E;
+    margin: 50px auto;
+    /* ความห่างจากขอบ ของจอ */
+    border-radius: 18px;
+    /* ความโค้งของมุม */
+    overflow: hidden;
+    /* ไฮไลสีแค่ที่เรากำหนดไม่แสดงสกอบาร์ */
+}
+
+.profile {
+    border-radius: 100%;
+    margin-top: 30px;
+    max-width: 30%;
+    height: auto;
+}
+
+.fullname {
+    color: #FEDECA;
+    font-size: 42px;
+    font-family: roboto;
+}
+
+.h2 {
+    color: #fcb384;
+    font-size: 32px;
+    font-family: roboto;
+}
+
+.h3 {
+    color: #fcb384;
+    font-size: 26px;
+    font-family: roboto;
+}
+
+.btn-work {
+    position: relative;
+    padding: 15px 50px;
+    top: 10px;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    color: #f9690E;
+    font-size: 24px;
+    font-family: roboto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul {
+    list-style: none;
+    padding: auto;
+    margin: 20px;
+    color: #FEDECA;
+}
+
+li {
+    padding-left: auto;
+}
+
+li::before {
+    content: "@";
+    padding-right: 8px;
+    color: #FEDECA;
+}
+
+.changSkill {
+    position: relative;
+    padding: 15px 50px;
+    margin-top: 30px;
+}
+
+.changSkill textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #fedeca;
+}
