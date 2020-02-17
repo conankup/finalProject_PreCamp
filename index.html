@@ -5,22 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+
     <script src="myScript.js"></script>
     <title>FinalProject by Jaruk</title>
 </head>
 
 <body id="changBGC">
     <div id="bg-color">
-        <p><input type="text" id="fullName" placeholder="ชื่อ - นามสกุล"></p>
-        <p><textarea id="listSkill" rows="6" cols="60" oninput="realChangSkill.value = listSkill.value"
-                placeholder="ระบุความสามารถพิเศษ"></textarea></p>
-        <p><button onclick="changResume()">Submit</button></p>
+        <p>ชื่อ - นามสกุล: <input type="text" id="fullName"> <button onclick="changName()"> ChangName </button></p>
+        <p>ความสามารถ: <input type="text" id="skill"> <button onclick="changSkill()"> Add Skill </button></p>
         <input type="color" id="myBGColor" onchange="myBGColor()">&nbsp;<label
             for="myBGColor">คลิกเลือกสีพื้นหลังที่ต้องการ</label>
         <p id="showcode-bg"></p>
     </div>
+    <!--Start box -->
     <div class="box-profile">
         <img src="https://i.ibb.co/rmG3Y6q/image.jpg" class="profile" /><br>
+
+
+
         <h1 class="fullname">
             <div id="changName">Jaruk Nattayakun</div>
         </h1>
@@ -31,13 +35,16 @@
             <li>ปริญญาตรี มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี สาขาเทคโนโลยีคอมพิวเตอร์</li>
             <li>ปริญญาโท มหาวิทยาลัยสุโขทัยธรรมาธิราช สาขาเทคโนโลยีสื่อสารการศึกษา</li>
         </ul>
+
         <button class="btn-work"> ความสามารถพิเศษ </button><br />
-        <div class="changSkill">
-            <textarea rows="7" cols="50" id="realChangSkill"
-                readonly>@ PHP+mySQL,Bootstrap3 เบื้องต้นได้ &#10;@ สามารถใช้กล้อง DSLR และแต่งภาพด้วยโปรแกรม PS,LR &#10;@ สามารถตัดต่อวิดีโอด้วยโปรแกรม PremierePro ได้ &#10;@ พิมพ์ดีดภาษาไทย อังกฤษแบบสัมผัสได้ดี &#10;@ ซ่อมประกอบคอมพิวเตอร์เบื้องต้นได้ &#10;@ นักกีฬาบาสเกตบอล และแบดมินตัน</textarea>
-        </div>
+
+        <ul id="mySkill"><li>เขียน PHP mySQL เบื้องต้น</li><li>ถ่ายภาพด้วยกล้อง DSLR และแต่งรูปภาพด้วยโปรแกรม PS , LR ได้</li><li>ตัดต่อวิดีโอเบื้องต้นด้วยโปรแกรม Premiere Pro ได้</li><li>ซ่อมประกอบคอมเบื้องต้นได้</li><li>พิมพ์ดีดภาษาไทย - อังกฤษ แบบสัมผัสได้</li><li>นักกีฬาบาส และแบดมินตัน</li></ul></ul>
+        <p><button onclick="delSkill()"> DELETE </button></p>
     </div>
-    
+    </div>
+    <!--End box -->
+
+
 </body>
 
 </html>
